@@ -1,6 +1,10 @@
 #!/bin/zsh
 
-repo_dir="$(dirname $0:A)"
+if [ -z "$CONFIG_ROOT" ]; then
+  repo_dir="$(dirname $0:A)"
+else
+  repo_dir="$CONFIG_ROOT"
+fi
 
 for module in $MODULES; do
   module_file="$repo_dir/modules/$module.zsh"
