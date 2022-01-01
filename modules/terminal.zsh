@@ -10,6 +10,6 @@ export TERM='xterm-256color'
 export PATH="/usr/local/sbin:$PATH"
 
 # aliases
-alias ll='ls -la'
+alias ll='ls -lah'
 alias lll='ls -ld . .. *'
 alias env='env | sort'
