@@ -5,7 +5,7 @@ export COMPOSE_PARALLEL_LIMIT=15 # default 64
 export COMPOSE_DOCKER_CLI_BUILD=1
 
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 
 function dclearimg() {
   docker rmi $(docker images | awk '{ print $3 " -> " $1 }' | grep '<none>' | awk '{ print $1 }')
