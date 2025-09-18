@@ -31,3 +31,4 @@ source <path>/.termconf/source-me.zsh # use the original source-me it will know 
 * rbenv
 * terminal
 * vscode
+* ffmpeg
